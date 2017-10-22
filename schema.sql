@@ -1,6 +1,6 @@
-CREATE DATABASE app;
+CREATE DATABASE stacks;
 
-\c app;
+\c stacks;
 
 CREATE TABLE IF NOT EXISTS account (
 	id SERIAL PRIMARY KEY, 

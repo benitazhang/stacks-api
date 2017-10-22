@@ -7,7 +7,7 @@ const options = {
         "port": 3000,
         "host": "localhost",
         "devURL": "http://localhost:3000",
-        "dbURL": `postgres://${process.env.DB_USER}:${process.env.DB_PW}@localhost:5432/app`,
+        "dbURL": `postgres://${process.env.DB_USER}:${process.env.DB_PW}@localhost:5432/stacks`,
         "fb": {
             "appID": process.env.FB_ID,
             "appSecret": process.env.FB_SECRET,

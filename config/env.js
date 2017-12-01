@@ -8,23 +8,13 @@ const options = {
         "host": "localhost",
         "devURL": "http://localhost:3000",
         "dbURL": `postgres://${process.env.DB_USER}:${process.env.DB_PW}@localhost:5432/stacks`,
-        "fb": {
-            "appID": process.env.FB_ID,
-            "appSecret": process.env.FB_SECRET,
-            "callbackURL": "http://localhost:3000/login/facebook/callback"
-        }
     },
     production: {
         "name": "production",
         "port": "",
         "host": "",
         "devURL": "",
-        "dbURL":"",
-        "fb": {
-            "appID": "",
-            "appSecret": "",
-            "callbackURL": ""
-        }
+        "dbURL":""
     }
 }
 

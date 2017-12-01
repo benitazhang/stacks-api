@@ -1,10 +1,9 @@
 // create, configure, start server
-const
-    express = require('express'),
-    bodyParser = require('body-parser'),
-    path = require('path'),
-    env = require('../config/env'),
-    routes = require('./routes');
+const express = require('express');
+const bodyParser = require('body-parser');
+const path = require('path');
+const env = require('../config/env');
+const routes = require('./routes');
 
 
 // create server
@@ -26,7 +25,6 @@ function start () {
     });
 
 };
-
 
 module.exports = {
     start

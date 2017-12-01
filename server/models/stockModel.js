@@ -30,7 +30,6 @@ async function updateStockData (stock) {
     }
 }
 
-
 module.exports = {
     getStockData,
     saveStockData,

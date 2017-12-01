@@ -14,7 +14,6 @@ function fetchStock (ticker) {
 
 }
 
-
 module.exports = {
     fetchStock
 }

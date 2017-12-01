@@ -7,7 +7,6 @@ function init(server) {
     server.use('/stock', stockRoute);
 }
 
-
 module.exports = {
     init
 };

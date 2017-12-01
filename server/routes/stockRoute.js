@@ -12,5 +12,4 @@ router.get('/', async (req, res) => {
     res.send(stockData);
 });
 
-
 module.exports = router;

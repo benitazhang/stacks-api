@@ -49,7 +49,6 @@ function isStockOutdated(stock){
 	return false;
 }
 
-
 module.exports = {
 	getStockData
 }

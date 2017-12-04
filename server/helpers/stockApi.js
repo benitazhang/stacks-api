@@ -1,7 +1,7 @@
 const request = require('request-promise');
 
 
-function fetchStock (ticker) {
+function fetchStock(ticker) {
     var config = {
         uri: `https://api.iextrading.com/1.0/stock/${ticker}/quote`,
         headers: {

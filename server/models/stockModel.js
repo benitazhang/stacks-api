@@ -2,7 +2,7 @@ const db = require('../../config/db');
 
 
 // add account row
-async function getStockData (ticker) {
+async function getStockData(ticker) {
     try {
         let result = await db.one('SELECT * FROM stock_price WHERE "ticker" = $1', ticker);
         return result[0];
@@ -12,7 +12,7 @@ async function getStockData (ticker) {
     }
 }
 
-async function saveStockData (stock) {
+async function saveStockData(stock) {
     try {
         let result = await db.query('INSERT INTO stock_price(ticker, closing_price, current_price, last_updated) VALUES(${ticker}, ${closingPrice}, ${currentPrice}, ${lastUpdated}) RETURNING *', stock);
         return result[0];
@@ -21,7 +21,7 @@ async function saveStockData (stock) {
     }
 }
 
-async function updateStockData (stock) {
+async function updateStockData(stock) {
     try {
         let result = await db.query('UPDATE stock_price SET closing_price=${closingPrice}, current_price=${currentPrice}, last_updated=${lastUpdated} WHERE ticker=${ticker} RETURNING *', stock);
         return result[0];

@@ -17,10 +17,10 @@ routes.init(server);
 
 
 // start server
-function start () {
+function start() {
     const port = env.port;
 
-    server.listen(port, function(){
+    server.listen(port, function() {
        console.log('Express server listening on port:' + port);
     });
 

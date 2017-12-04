@@ -3,7 +3,7 @@ const stockModel = require('../models/stockModel');
 const stockApi = require('../helpers/stockApi');
 
 
-async function getStockData (ticker) {
+async function getStockData(ticker) {
 	let stockCached = await stockModel.getStockData(ticker);
 
 	try {
@@ -39,7 +39,7 @@ async function getStockData (ticker) {
 	}
 }
 
-function isStockOutdated(stock){
+function isStockOutdated(stock) {
 	const timeLastUpdated = (moment.utc() - moment.utc(stock.last_updated))/60000
 	
     if (timeLastUpdated > 10) {
